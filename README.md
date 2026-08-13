@@ -56,7 +56,7 @@ The project report documents the following major hardware:
 | 10 piezoelectric sensors | Vibration energy harvesting |
 | 10 thermoelectric modules | Thermal energy harvesting |
 | Bridge rectifier | Converts piezoelectric AC output to DC |
-| Charger controller | Stabilizes combined harvested energy and manages charging |
+| Charger controller | Stabilizes harvested energy and manages charging |
 | DC voltage sensor | Real-time voltage monitoring |
 | 12 V rechargeable battery | Energy storage |
 | 16×2 LCD | Displays voltage, battery status and alerts |
@@ -95,12 +95,12 @@ The prototype follows these stages:
 
 The final project report records the following results under the reported test conditions:
 
-- Piezoelectric sensor output: **8–15 V per sensor (average range) depending on vibration intensity**
-- Thermoelectric module output: **3–5 V per module under the reported thermal conditions**
+- Piezoelectric output: **8–15 V**
+- Thermoelectric output: **3–5 V**
 - Stabilized battery-side output: **12–14 V**
 - Reported efficiency: **approximately 77% under optimal conditions**
 - Battery full-charge time: **3–4 hours under optimal conditions**
-- Backup duration: **up to 6 hours under the reported low-energy test condition**
+- Backup duration: **up to 6 hours under the reported test condition**
 - Temperature range tested/reported: **40–120 °C**
 - Vibration frequency range tested/reported: **10–50 Hz**
 - Reported development cost: **₹12,200**
@@ -115,7 +115,7 @@ My project contribution covered the hardware-oriented implementation and evaluat
 
 ### Electric Vehicles
 
-Future EV integration could place piezoelectric harvesting elements in suitable vibration locations such as suspension/chassis structures and thermoelectric modules near useful waste-heat sources. The harvested energy would act as **supplementary power** for the vehicle electrical system or selected low-power loads.
+Future EV integration could place suitable piezoelectric harvesting elements at locations where useful vehicle vibration exists and thermoelectric modules near useful waste-heat sources. The harvested energy would act as **supplementary power** for selected low-power electrical loads rather than replacing the main traction battery.
 
 ### Industrial Machinery
 
@@ -157,7 +157,7 @@ Develop a vehicle-oriented architecture that combines vibration harvesting, ther
 
 ### 7. Wireless Energy Transfer
 
-The project report identifies wireless energy transfer as a possible future enhancement for seamless charging-oriented applications.
+Wireless energy transfer can be studied as a separate future enhancement for contactless energy-transfer and charging-oriented applications. It was **not implemented in the present prototype**.
 
 ## What This Project Demonstrates
 
@@ -168,21 +168,42 @@ This project combines concepts from:
 - Piezoelectric energy harvesting
 - Thermoelectric energy harvesting
 - Power conversion and regulation
-- Battery management
+- Battery charging and storage
 - Sensor integration
 - Arduino programming
 - Energy monitoring
 - IoT and predictive-maintenance concepts
 
-## Interview Explanation
+## Project Documentation
 
-**In 30 seconds:**
+The repository is intended to contain the engineering documentation and implementation files for the prototype:
 
-> “My final-year project was a hybrid thermal and vibrational energy harvesting system. We used piezoelectric sensors to convert mechanical vibration into electrical energy and thermoelectric modules to recover energy from temperature differences. The outputs were conditioned and stored in a 12-volt battery, while an Arduino system monitored the energy and battery status. The prototype was designed as a proof of concept, with future scope for EVs, industrial machinery and self-powered IoT sensors.”
+```text
+thermal-vibrational-energy-harvesting/
+├── README.md
+├── docs/
+│   ├── project-explanation.md
+│   ├── system-architecture.md
+│   └── future-development.md
+├── hardware/
+│   ├── components.md
+│   ├── working-principle.md
+│   └── circuit-diagram.md
+├── firmware/
+│   └── arduino-monitoring.ino
+├── images/
+│   ├── block-diagram.png
+│   ├── system-architecture.png
+│   ├── prototype-1.jpg
+│   ├── prototype-2.jpg
+│   └── nithesh-with-prototype.jpg
+└── results/
+    └── experimental-results.md
+```
 
-**Important technical point:**
+## Technical Note
 
-The project is best presented as a **supplementary energy-recovery system**, not as a replacement for an EV's primary battery or as a standalone commercial EV charger.
+The project is a **college-scale proof-of-concept**. The reported prototype results should not be interpreted as specifications for a commercial EV charging system. Any future EV or industrial implementation would require separate engineering validation for efficiency, thermal management, power electronics, electromagnetic compatibility, mechanical integration and safety.
 
 ## Source
 
@@ -194,4 +215,16 @@ MIT License
 
 Copyright (c) 2026 Nithesh S
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
