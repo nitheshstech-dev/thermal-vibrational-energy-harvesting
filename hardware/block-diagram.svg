@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<defs><linearGradient id="a" x1="0" x2="1"><stop stop-color="#6a1b9a"/><stop offset="1" stop-color="#00acc1"/></linearGradient><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<rect width="1200" height="620" fill="#f7f9fc"/>
+<text x="600" y="45" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold" fill="#222">Hybrid Thermal &amp; Vibrational Energy Harvesting</text>
+<g font-family="Arial" font-size="17" text-anchor="middle">
+<rect x="50" y="110" width="210" height="90" rx="16" fill="url(#a)"/><text x="155" y="150" fill="white">Mechanical Vibration</text><text x="155" y="177" fill="white">Piezoelectric Sensors</text>
+<rect x="50" y="360" width="210" height="90" rx="16" fill="#ef6c00"/><text x="155" y="400" fill="white">Waste Heat</text><text x="155" y="427" fill="white">Thermoelectric Modules</text>
+<rect x="350" y="110" width="210" height="90" rx="16" fill="white" stroke="#6a1b9a" stroke-width="3"/><text x="455" y="150" fill="#222">Bridge Rectifier</text><text x="455" y="177" fill="#222">AC → DC</text>
+<rect x="350" y="360" width="210" height="90" rx="16" fill="white" stroke="#ef6c00" stroke-width="3"/><text x="455" y="400" fill="#222">DC Conditioning</text><text x="455" y="427" fill="#222">Thermal Path</text>
+<rect x="650" y="225" width="220" height="100" rx="16" fill="url(#a)"/><text x="760" y="265" fill="white">Charging / Power</text><text x="760" y="292" fill="white">Management</text>
+<rect x="950" y="225" width="180" height="100" rx="16" fill="#263238"/><text x="1040" y="265" fill="white">12 V Battery</text><text x="1040" y="292" fill="white">Energy Storage</text>
+<rect x="650" y="440" width="220" height="90" rx="16" fill="white" stroke="#00acc1" stroke-width="3"/><text x="760" y="480" fill="#222">Arduino + Voltage</text><text x="760" y="507" fill="#222">Sensor / LCD</text>
+<path d="M260 155 L350 155" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/><path d="M260 405 L350 405" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M560 155 C610 155 610 245 650 260" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/><path d="M560 405 C610 405 610 305 650 290" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M870 275 L950 275" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/><path d="M1040 325 C1040 420 850 420 870 465" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrow)"/>
+</g></svg>
